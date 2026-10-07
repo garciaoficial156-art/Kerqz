@@ -1,0 +1,88 @@
+KERQZ — ONDE COLOCAR AS IMAGENS
+=================================
+
+Formato recomendado: JPG ou WebP (troca a extensão .jpg no código se usares outra). Fundo claro/cinza, produto centrado, 1000×1000 px.
+
+1) SITE (imagens fixas no index.html)
+  images/favicon.png                      64×64
+  images/hero/hero-1.jpg, hero-2.jpg, hero-3.jpg     1920×900 (horizontal)
+  images/categorias/calcado.jpg, casacos.jpg, t-shirts.jpg, calcas.jpg, acessorios.jpg   800×1000 (vertical)
+  images/banners/banner-1.jpg, banner-2.jpg          1000×700
+
+2) PRODUTOS (uma pasta por produto, um ficheiro por cor)
+  -1.jpg = principal (obrigatória) · -2.jpg = aparece ao passar o rato · -3.jpg e -4.jpg = galeria (opcionais)
+
+KERQZ AERO RUNNER
+  images/produtos/kerqz-aero-runner/areia-1.jpg   (cor Areia)
+  images/produtos/kerqz-aero-runner/grafite-1.jpg   (cor Grafite)
+  images/produtos/kerqz-aero-runner/azul-1.jpg   (cor Azul)
+
+KERQZ COURT CLASSIC
+  images/produtos/kerqz-court-classic/branco-1.jpg   (cor Branco)
+  images/produtos/kerqz-court-classic/verde-1.jpg   (cor Verde)
+  images/produtos/kerqz-court-classic/preto-1.jpg   (cor Preto)
+
+KERQZ TRAIL PRO
+  images/produtos/kerqz-trail-pro/oliva-1.jpg   (cor Oliva)
+  images/produtos/kerqz-trail-pro/grafite-1.jpg   (cor Grafite)
+  images/produtos/kerqz-trail-pro/terracota-1.jpg   (cor Terracota)
+
+KERQZ PULSE FEMININO
+  images/produtos/kerqz-pulse-feminino/rosa-1.jpg   (cor Rosa)
+  images/produtos/kerqz-pulse-feminino/branco-1.jpg   (cor Branco)
+  images/produtos/kerqz-pulse-feminino/lilas-1.jpg   (cor Lilás)
+
+KERQZ MINI KICK
+  images/produtos/kerqz-mini-kick/azul-1.jpg   (cor Azul)
+  images/produtos/kerqz-mini-kick/vermelho-1.jpg   (cor Vermelho)
+
+HOODIE ESSENCIAL
+  images/produtos/hoodie-essencial/cinza-1.jpg   (cor Cinza)
+  images/produtos/hoodie-essencial/preto-1.jpg   (cor Preto)
+  images/produtos/hoodie-essencial/vinho-1.jpg   (cor Vinho)
+
+BOMBER LISBOA
+  images/produtos/bomber-lisboa/oliva-1.jpg   (cor Oliva)
+  images/produtos/bomber-lisboa/preto-1.jpg   (cor Preto)
+  images/produtos/bomber-lisboa/marinho-1.jpg   (cor Marinho)
+
+PUFFER LEVE
+  images/produtos/puffer-leve/azul-ceu-1.jpg   (cor Azul-céu)
+  images/produtos/puffer-leve/preto-1.jpg   (cor Preto)
+  images/produtos/puffer-leve/areia-1.jpg   (cor Areia)
+
+T-SHIRT PIMA
+  images/produtos/t-shirt-pima/branco-1.jpg   (cor Branco)
+  images/produtos/t-shirt-pima/preto-1.jpg   (cor Preto)
+  images/produtos/t-shirt-pima/terracota-1.jpg   (cor Terracota)
+  images/produtos/t-shirt-pima/ceu-1.jpg   (cor Céu)
+
+T-SHIRT TREINO DRY
+  images/produtos/t-shirt-treino-dry/preto-1.jpg   (cor Preto)
+  images/produtos/t-shirt-treino-dry/cinza-1.jpg   (cor Cinza)
+  images/produtos/t-shirt-treino-dry/azul-1.jpg   (cor Azul)
+
+TOP STUDIO
+  images/produtos/top-studio/preto-1.jpg   (cor Preto)
+  images/produtos/top-studio/vinho-1.jpg   (cor Vinho)
+  images/produtos/top-studio/rosa-1.jpg   (cor Rosa)
+
+CALÇA CARGO
+  images/produtos/calca-cargo/oliva-1.jpg   (cor Oliva)
+  images/produtos/calca-cargo/areia-1.jpg   (cor Areia)
+  images/produtos/calca-cargo/preto-1.jpg   (cor Preto)
+
+LEGGING STUDIO
+  images/produtos/legging-studio/preto-1.jpg   (cor Preto)
+  images/produtos/legging-studio/marinho-1.jpg   (cor Marinho)
+
+BONÉ CLÁSSICO
+  images/produtos/bone-classico/preto-1.jpg   (cor Preto)
+  images/produtos/bone-classico/branco-1.jpg   (cor Branco)
+  images/produtos/bone-classico/vinho-1.jpg   (cor Vinho)
+
+MOCHILA URBAN
+  images/produtos/mochila-urban/preto-1.jpg   (cor Preto)
+  images/produtos/mochila-urban/oliva-1.jpg   (cor Oliva)
+
+Enquanto uma imagem não existir, o site mostra um bloco cinzento com o caminho exato onde o ficheiro deve ficar.

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kerqz — Ténis, roupa e acessórios</title>
+<meta name="description" content="Kerqz: ténis, vestuário e acessórios de desempenho e estilo. Entrega em Luanda em 24 a 48 horas.">
+<!-- 📷 ÍCONE DO SITE (favicon): images/favicon.png (64×64) -->
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>/* placeholder quando falta uma imagem: mostra onde colocar o ficheiro */
+window.Kerqz={miss:function(el,t){var d=document.createElement("div");d.className="ph";var b=document.createElement("b");b.textContent=t;var s=document.createElement("small");s.textContent=el.getAttribute("src");d.append(b,s);el.replaceWith(d)}};</script>
+
+</head>
+<body>
+<a class="skip" href="#loja">Saltar para os produtos</a>
+
+<div class="promo-bar"><span><b>Entrega grátis</b> acima de 150.000 Kz</span><span>Devolução em 30 dias</span><span>Código <b>KERQZ10</b>: -10%</span></div>
+
+<header id="hdr">
+  <div class="hdr-in">
+    <a class="logo" href="#top" aria-label="Kerqz, início">KERQZ</a>
+    <nav id="nav" aria-label="Principal"></nav>
+    <div class="hdr-actions">
+      <button class="search-pill" id="openSearch" aria-label="Pesquisar">Pesquisar <kbd>/</kbd></button>
+      <button class="ib" id="openWish" aria-label="Favoritos">Favoritos<span class="cnt" id="wCnt"></span></button>
+      <button class="ib" id="openCart" aria-label="Abrir sacola">Sacola<span class="cnt" id="cCnt"></span></button>
+      <button class="ib burger" id="burger" aria-label="Menu"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+  <div class="mega" id="mega"></div>
+</header>
+
+<main id="top">
+<!-- ============ HERO (3 slides) ============ -->
+<section class="hero" aria-roledescription="carrossel" aria-label="Destaques">
+  <article class="slide on">
+    <!-- 📷 HERO 1 → images/hero/hero-1.jpg (1920×900, horizontal) -->
+    <img src="images/hero/hero-1.jpg" alt="Kerqz Aero Runner" fetchpriority="high" onerror="Kerqz.miss(this,'Hero 1')">
+    <div class="slide-txt"><p class="kick">Novo</p><h1>Corre<br>mais longe</h1><p>Aero Runner: espuma reativa e cabedal respirável.</p><a class="btn w" href="#loja" data-filter="sport:Running">Comprar running</a></div>
+  </article>
+  <article class="slide">
+    <!-- 📷 HERO 2 → images/hero/hero-2.jpg (1920×900) -->
+    <img src="images/hero/hero-2.jpg" alt="Coleção de treino Kerqz" loading="lazy" onerror="Kerqz.miss(this,'Hero 2')">
+    <div class="slide-txt"><p class="kick">Treino</p><h1>Sem limites<br>no ginásio</h1><p>T-shirts e leggings que acompanham cada repetição.</p><a class="btn w" href="#loja" data-filter="sport:Treino">Ver treino</a></div>
+  </article>
+  <article class="slide">
+    <!-- 📷 HERO 3 → images/hero/hero-3.jpg (1920×900) -->
+    <img src="images/hero/hero-3.jpg" alt="Ofertas Kerqz" loading="lazy" onerror="Kerqz.miss(this,'Hero 3')">
+    <div class="slide-txt"><p class="kick">Ofertas</p><h1>Até -30%<br>de época</h1><p>Peças selecionadas com preço reduzido.</p><a class="btn w" href="#loja" data-filter="sale:1">Ver ofertas</a></div>
+  </article>
+  <div class="hero-ui"><div class="dots"></div><button class="arr" data-hero="-1" aria-label="Anterior">‹</button><button class="arr" data-hero="1" aria-label="Seguinte">›</button></div>
+  <div class="bar"><i></i></div>
+</section>
+
+<!-- ============ NOVIDADES (carrossel) ============ -->
+<section class="sec">
+  <div class="sec-h"><h2>Novidades</h2><div class="car-btns"><button data-car="-1" aria-label="Anterior">‹</button><button data-car="1" aria-label="Seguinte">›</button></div></div>
+  <div class="car" id="carNew"></div>
+</section>
+
+<!-- ============ VISTOS RECENTEMENTE (só aparece depois de veres um produto) ============ -->
+<section class="sec" id="secRecent" hidden>
+  <div class="sec-h"><h2>Vistos recentemente</h2><div class="car-btns"><button data-car="-1" aria-label="Anterior">‹</button><button data-car="1" aria-label="Seguinte">›</button></div></div>
+  <div class="car" id="carRecent"></div>
+</section>
+
+<!-- ============ CATEGORIAS ============ -->
+<section class="sec">
+  <div class="sec-h"><h2>Compra por categoria</h2></div>
+  <div class="cats">
+    <!-- 📷 CATEGORIAS → images/categorias/*.jpg (800×1000, vertical) -->
+    <a class="cat rv" href="#loja" data-filter="cat:Calçado"><img src="images/categorias/calcado.jpg" alt="Calçado" loading="lazy" onerror="Kerqz.miss(this,'Calçado')"><span>Calçado</span></a>
+    <a class="cat rv" href="#loja" data-filter="cat:Casacos"><img src="images/categorias/casacos.jpg" alt="Casacos" loading="lazy" onerror="Kerqz.miss(this,'Casacos')"><span>Casacos</span></a>
+    <a class="cat rv" href="#loja" data-filter="cat:T-shirts"><img src="images/categorias/t-shirts.jpg" alt="T-shirts" loading="lazy" onerror="Kerqz.miss(this,'T-shirts')"><span>T-shirts</span></a>
+    <a class="cat rv" href="#loja" data-filter="cat:Calças"><img src="images/categorias/calcas.jpg" alt="Calças" loading="lazy" onerror="Kerqz.miss(this,'Calças')"><span>Calças</span></a>
+    <a class="cat rv" href="#loja" data-filter="cat:Acessórios"><img src="images/categorias/acessorios.jpg" alt="Acessórios" loading="lazy" onerror="Kerqz.miss(this,'Acessórios')"><span>Acessórios</span></a>
+  </div>
+</section>
+
+<!-- ============ BANNERS ============ -->
+<section class="banners">
+  <!-- 📷 BANNERS → images/banners/banner-1.jpg e banner-2.jpg (1000×700) -->
+  <a class="banner rv" href="#loja" data-filter="cat:Casacos"><img src="images/banners/banner-1.jpg" alt="Casacos" loading="lazy" onerror="Kerqz.miss(this,'Banner 1')"><div><h3>Casacos para<br>qualquer noite</h3><span class="btn w">Comprar</span></div></a>
+  <a class="banner rv" href="#loja" data-filter="gen:Criança"><img src="images/banners/banner-2.jpg" alt="Kerqz Kids" loading="lazy" onerror="Kerqz.miss(this,'Banner 2')"><div><h3>Kerqz Kids<br>para os pequenos</h3><span class="btn w">Comprar</span></div></a>
+</section>
+
+<!-- ============ LOJA ============ -->
+<section class="sec shop" id="loja">
+  <div class="sec-h"><h2>Loja <small id="count"></small></h2>
+    <div class="tools"><button id="toggleF" class="tf">Ocultar filtros</button><label class="sort">Ordenar por
+      <select id="sort"><option value="rel">Em destaque</option><option value="new">Mais recentes</option><option value="pop">Mais populares</option><option value="asc">Preço: crescente</option><option value="desc">Preço: decrescente</option></select></label></div></div>
+  <div class="chips" id="chips"></div>
+  <div class="shop-grid" id="shopGrid">
+    <aside id="filters" aria-label="Filtros"></aside>
+    <div><div class="grid" id="grid"></div><div class="more"><button class="btn o" id="more">Ver mais</button></div></div>
+  </div>
+</section>
+
+<section class="perks">
+  <div class="rv"><h3>Entrega em Luanda</h3><p>24 a 48 horas. Outras províncias até 5 dias úteis.</p></div>
+  <div class="rv"><h3>30 dias para devolver</h3><p>Não serviu? Trocamos o tamanho ou devolvemos o valor.</p></div>
+  <div class="rv"><h3>Pagamento fácil</h3><p>Multicaixa Express, referência ou pagar na entrega.</p></div>
+  <div class="rv"><h3>Suporte por WhatsApp</h3><p>Fala connosco todos os dias, das 8h às 20h.</p></div>
+</section>
+</main>
+
+<footer>
+  <div class="ft">
+    <div><h4>Calçado</h4><a href="#loja" data-filter="gen:Homem|cat:Calçado">Homem</a><a href="#loja" data-filter="gen:Mulher|cat:Calçado">Mulher</a><a href="#loja" data-filter="gen:Criança|cat:Calçado">Criança</a><a href="#loja" data-filter="sport:Running">Running</a></div>
+    <div><h4>Vestuário</h4><a href="#loja" data-filter="cat:Casacos">Casacos</a><a href="#loja" data-filter="cat:T-shirts">T-shirts</a><a href="#loja" data-filter="cat:Calças">Calças</a><a href="#loja" data-filter="cat:Acessórios">Acessórios</a></div>
+    <div><h4>Ajuda</h4><a href="#">Tabela de tamanhos</a><a href="#">Trocas e devoluções</a><a href="#">Estado da encomenda</a><a href="#">Contacto</a></div>
+    <div class="nl"><h4>Recebe as novidades</h4><form id="nl" novalidate><input type="email" placeholder="O teu email" aria-label="Email"><button class="btn w">Subscrever</button></form><small>Ao subscreveres, aceitas receber emails da Kerqz.</small></div>
+  </div>
+  <p class="copy">© 2026 Kerqz. Luanda, Angola. Preços em Kwanzas (Kz).</p>
+</footer>
+
+<!-- ============ PAINÉIS E JANELAS ============ -->
+<div id="veil"></div>
+<section id="search" aria-label="Pesquisa">
+  <div class="s-top"><input id="sInput" type="search" placeholder="Pesquisar" autocomplete="off" aria-label="Pesquisar produtos"><button class="btn o" data-close-panel>Cancelar</button></div>
+  <div class="s-body"><div id="sSide"></div><div id="sRes"></div></div>
+</section>
+<aside id="mmenu" aria-label="Menu"></aside>
+<aside id="cart" aria-label="Sacola"><header><h2>Sacola</h2><button class="x" data-close-panel aria-label="Fechar">×</button></header><div id="cShip" class="ship"></div><div id="cItems"></div><div id="cFoot"></div></aside>
+<dialog id="pm" aria-label="Produto"></dialog>
+<dialog id="co" aria-label="Finalizar compra"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<button id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
